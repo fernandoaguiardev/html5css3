@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        /*Importante SELETORES PERSONALIZADOS
+        
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = children
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+        }
+        main{
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:hover{ /*Quando o cursor passa em cima fica sublinhado*/
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: blue;
+        }
+        a::after{
+            content: 'Click';
+            color: black;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body><main>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22"target="_blank">Site curso em video</a></li>
+
+
+    </ul>
+</main>
+    
+</body>
+</html>

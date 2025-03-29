@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+
+        /* Container é o Flex-Box PAI */       
+        div.container{
+            background-color: rgb(0, 100, 200);
+
+            display: flex;
+            flex-flow: row wrap; /* Row, Row-reverse, Column, Column-reverse*/
+        }
+        div.item{
+            background-color: orangered;
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 002</h1>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">BB</div>
+        <div class="item">CCC</div>
+        <div class="item">DDDD</div>
+        <div class="item">EEEEE</div>
+        <div class="item">FFFFFF</div>
+        <div class="item">GGGGGGG</div>
+    </div>
+</body>
+</html>

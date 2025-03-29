@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+
+        /* Container é o Flex-Box PAI */       
+        div.container{
+            background-color: rgb(0, 100, 200);
+
+            display: flex;
+            flex-flow: row nowrap; /* Row, Row-reverse, Column, Column-reverse*/
+        }
+        div.item{
+            background-color: orangered;
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+
+        }
+        #a{
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px;*/
+            flex: initial; /* flex: 0 1 auto */
+        }
+        #bb{
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 150px;*/
+            flex: none; /* flex: 0 0 auto */
+        }
+        #ccc{
+            /*flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: auto; /* flex: 1 1 auto */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 012</h1>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="bb">BB</div>
+        <div class="item" id="ccc">CCC</div>
+    </div>
+</body>
+</html>

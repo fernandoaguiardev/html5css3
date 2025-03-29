@@ -1,0 +1,7 @@
+@charset 'UTF-8'; /* Define a codificação de caracteres do arquivo como UTF-8 */
+
+body {
+    height: 98vh;
+    background-image: url('../_img/wallpaper003.jpg');
+    background-position: center center;
+}

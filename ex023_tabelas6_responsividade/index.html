@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+    <head>
+        <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para ser responsivo em diferentes dispositivos -->
+        <title>_blank</title> <!-- Título da página que aparece na aba do navegador -->
+        <style>
+            /* Estilo aplicado ao corpo da página */
+            body{
+                font-family: monospace; /* Define a fonte como monospace */
+                text-align: center; /* Centraliza o texto */
+                margin: auto; /* Define margens automáticas para centralização */
+                font-size: 14pt; /* Tamanho da fonte em 14pt */
+            }
+
+            /* Estilo aplicado às tabelas */
+            table{
+                border-collapse: collapse; /* Colapsa as bordas da tabela */
+                margin: auto; /* Centraliza a tabela */
+                width: 400px; /* Define a largura da tabela */
+            }
+
+            /* Estilo aplicado à legenda da tabela */
+            caption{
+                padding: 15px; /* Adiciona espaçamento interno à legenda */
+            }
+
+            /* Estilo aplicado aos cabeçalhos das colunas */
+            th{
+                background-color: yellow; /* Define o fundo amarelo para cabeçalhos */
+            }
+
+            /* Estilo aplicado aos cabeçalhos e células da tabela */
+            th, td{
+                border: 1px solid black; /* Define borda preta de 1px */
+            }
+
+            /* Estilo aplicado a cada segunda linha da tabela (efeito zebrado) */
+            tr:nth-child(2n){
+                background-color: darkgray; /* Cor de fundo cinza escuro */
+            }
+
+            /* Estilo aplicado ao contêiner que contém a tabela para tornar a visualização responsiva */
+            #container{
+                margin: auto; /* Centraliza o contêiner */
+                overflow-x: auto; /* Permite rolagem horizontal se o conteúdo ultrapassar a largura */
+                width: 80vw; /* Define a largura do contêiner como 80% da largura da viewport */
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Tabela em telas pequenas</h1> <!-- Título principal da página -->
+
+        <!-- Parágrafo com um texto fictício (placeholder) -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, atque iusto fuga deserunt corporis illum? Molestiae fuga esse excepturi minima explicabo fugiat, totam eos ea provident, architecto sint sunt itaque!</p>
+        
+        <!-- Contêiner que mantém a tabela dentro, garantindo a responsividade -->
+        <div id="container">
+            <table>
+                <caption>Tabelas Responsivas</caption> <!-- Legenda da tabela -->
+                
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela com várias linhas e colunas de dados -->
+                <tbody>
+                    <!-- Exemplo de uma linha da tabela -->
+                    <tr>
+                        <td>A</td> <!-- Celular que contém o valor "A" -->
+                        <td>24</td> <!-- Celular que contém o valor "24" (para o mês de janeiro) -->
+                        <td>32</td>
+                        <td>56</td>
+                        <td>01</td>
+                        <td>12</td>
+                        <td>22</td>
+                        <td>67</td>
+                        <td>10</td>
+                        <td>18</td>
+                        <td>89</td> <!-- Observação: aqui há um erro de fechamento da tag, deveria ser <td>89</td> -->
+                        <td>11</td>
+                        <td>07</td>
+                    </tr>
+                    <!-- As próximas linhas seguem o mesmo padrão -->
+                    <tr>
+                        <td>A</td>
+                        <td>24</td>
+                        <td>32</td>
+                        <td>56</td>
+                        <td>01</td>
+                        <td>12</td>
+                        <td>22</td>
+                        <td>67</td>
+                        <td>10</td>
+                        <td>18</td>
+                        <td>89</td> <!-- Mesma correção necessária aqui -->
+                        <td>11</td>
+                        <td>07</td>
+                    </tr>
+                    <!-- Linhas repetidas para demonstração, com o mesmo erro nas tags <td> -->
+                </tbody>
+            </table>
+        </div>
+    <script></script> <!-- Placeholder para futuros scripts JavaScript -->
+    </body>
+</html>

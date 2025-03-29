@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+body{
+    /*height: 100vh;
+    background-color: rgb(69, 69, 69);
+    background-image: url('../_img/wallpaper002.jpg');
+    margin: auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+    /*Shorthand background
+        color > image > position > repeat [size(não funciona)] > attachment
+    */
+    background: rgb(69, 69, 69) url('../_img/wallpaper002.jpg') center center fixed;
+    background-size: cover;
+
+}
+main{
+
+    background-color: rgba(225, 247, 255, 0.501);
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid lightcoral;
+    border-radius: 15px;
+}

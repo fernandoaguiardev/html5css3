@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+
+    <style>
+        /* Estilos aqui */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(37, 82, 110);
+            color: white;
+            font-size: 16px;
+            padding: 0;
+            margin: 2px 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome: <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" size="32" value="Zé Ziunho"></label>
+        </p>
+        <p>
+        </p>
+        <p>
+            <label for="imedia">Média:</label> <input type="number" name="madeia" id="imedia" min="0" max="10" placeholder="10" size="10" step="0.5" value="5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label><input type="month" name="mes" id="imes" placeholder="Mês" value="2025-02">
+        </p>
+        <p>
+            <label for="imes">Dia da Prova: </label><input type="date" name="date" id="idate" placeholder="Dia" value="2025-02-10">
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova: </label><input type="time" name="time" id="itime">
+        </p>
+        <p>
+            <input type="submit" value="Enviar"><input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <script>
+        // Scripts aqui
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(119, 91, 42);
+
+}
+
+body{
+    background-image: url('../img/fundo-madeira.jpg');
+    background-size: cover;background-attachment: fixed;
+     
+}
+
+main{
+    height: 100vw;
+    position: relative;
+
+}
+
+section#tablet{
+    position: absolute;
+    top: 50vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 584px;
+    background-image: url('../img/tablet.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        /* Estilos aqui */
+        div{
+            background-color: lightgray;
+            border-radius: 15px;
+            padding: 20px;
+            border: 2px solid rgb(85, 90, 104);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.279);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo 04</h1>
+        <div>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <p>
+                        <label for="iemail">Email:<input type="email" name="email" id="iemail" required autocomplete="email"></label>
+                        
+                        <!-- Estudar RegEx -->
+                        
+                        <label for="itel">Telefone:<input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}"></label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Corrigir">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt aliquam nostrum voluptatum architecto repellat laboriosam mollitia aliquid corporis est unde tempore optio officia, debitis iure animi nemo ducimus ipsa!</p>
+
+    <script>
+        // Scripts aqui
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    font: normal 16px Arial, Verdana, serif;
+    text-align: justify;
+}
+h1, h2{
+    text-align: center;
+}
+main{
+    background-color: brown;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+
+}

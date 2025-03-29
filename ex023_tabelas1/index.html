@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt=BR"> <!-- Declara o tipo de documento e define o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para responsividade em dispositivos móveis -->
+    <title>Trabalhando com tabelas</title> <!-- Título da página -->
+    <style>
+        @charset 'UTF-8'; /* Define a codificação para o CSS */
+
+        * {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para todo o documento */
+        }
+        
+        table {
+            font-size: 12pt; /* Tamanho da fonte das células */
+            border-collapse: collapse; /* Une as bordas das células adjacentes */
+            table-layout: fixed; /* Força o layout fixo, respeitando as larguras definidas */
+            background-color: rgba(36, 70, 221, 0.24); /* Cor de fundo da tabela */
+        }
+        
+        tr.linha {
+            background-color: rgb(8, 0, 255); /* Cor de fundo para linhas com a classe 'linha' */
+            color: antiquewhite; /* Cor do texto na linha */
+        }
+        
+        td {
+            width: 90px; /* Largura fixa da célula */
+            height: 90px; /* Altura fixa da célula */
+            border: solid 1px black; /* Bordas sólidas pretas para as células */
+            padding: 0px 5px; /* Espaçamento interno nas células */
+            text-align: center; /* Alinhamento horizontal do texto */
+            vertical-align: middle; /* Alinhamento vertical do texto */
+
+            /* Valores possíveis para a propriedade vertical-align:
+                1. baseline: Alinha o elemento à linha de base do texto adjacente (padrão).
+                2. sub: Alinha o elemento como um texto subscrito.
+                3. super: Alinha o elemento como um texto sobrescrito.
+                4. top: Alinha o elemento ao topo da linha de seu contêiner.
+                5. text-top: Alinha o elemento ao topo do texto adjacente.
+                6. middle: Alinha o elemento no meio da linha de seu contêiner.
+                7. bottom: Alinha o elemento ao fundo da linha de seu contêiner.
+                8. text-bottom: Alinha o elemento à parte inferior do texto adjacente.
+                9. length: Permite o uso de valores em unidades de medida (como px, %, etc.) para um alinhamento personalizado.
+            */
+        }
+
+        .numero {
+            text-align: right; /* Alinha o texto à direita para números */
+        }
+
+        td.celula {
+            background-color: rgb(115, 0, 255); /* Cor de fundo específica para células com a classe 'celula' */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 2</h1> <!-- Título da página -->
+
+    <!--
+        HIERARQUIA DE TABELA (simples)
+        table == tabela
+            table row == linha de tabela
+                table header == cabeçalho de tabela
+                    table data == dados de tabela
+    -->
+
+    <table> <!-- Início da tabela -->
+        <tr> <!-- Início de uma nova linha -->
+            <td>A1</td> <!-- td adiciona dados nas células (eixo x) -->
+            <td>B1</td>
+            <td>C1</td>
+        </tr> <!-- Fim da linha -->
+        <tr class="linha"> <!-- Linha com a classe 'linha' para estilização -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Nova linha -->
+            <td>A3</td>
+            <td class="numero">1000</td> <!-- Célula com a classe 'numero' para alinhamento à direita -->
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Outra linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="celula">C4</td> <!-- Célula com a classe 'celula' para estilização -->
+        </tr>
+    </table> <!-- Fim da tabela -->
+    
+</body>
+</html>

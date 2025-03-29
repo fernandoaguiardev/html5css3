@@ -1,0 +1,64 @@
+{
+	"HTML Básico em pt-BR": {
+	  "prefix": "!pt-BR",
+	  "body": [
+		"<!DOCTYPE html>",
+		"<html lang=\"pt-BR\">",
+		"<head>",
+		"    <meta charset=\"UTF-8\">",
+		"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+		"    <title>${1:Título da Página}</title>",
+		"",
+		"    <style>",
+		"        /* Estilos aqui */",
+		"    </style>",
+		"",
+		"</head>",
+		"<body>",
+		"    <h1>${2:Bem-vindo à minha página}</h1>",
+		"    <p>${3:Conteúdo da página}</p>",
+		"",
+		"    <script>",
+		"        // Scripts aqui",
+		"    </script>",
+		"",
+		"</body>",
+		"</html>"
+	  ],
+	  "description": "Gera um template HTML básico em português com style e script"
+	}
+  }
+  
+  //	Parágrafo com Loren
+
+  {
+	"HTML Básico com <p>Loren": {
+	  "prefix": "ploren",
+	  "body": [
+		"<!DOCTYPE html>",
+		"<html lang=\"pt-BR\">",
+		"<head>",
+		"    <meta charset=\"UTF-8\">",
+		"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+		"    <title>${1:Título da Página}</title>",
+		"",
+		"    <style>",
+		"        /* Estilos aqui */",
+		"    </style>",
+		"",
+		"</head>",
+		"<body>",
+		"    <h1>${2:Bem-vindo à minha página}</h1>",
+		"    <p>${3:loren}</p>",
+		"",
+		"    <script>",
+		"        // Scripts aqui",
+		"    </script>",
+		"",
+		"</body>",
+		"</html>"
+	  ],
+	  "description": "Gera um template HTML básico com parágrafo e loren"
+	}
+  }
+  

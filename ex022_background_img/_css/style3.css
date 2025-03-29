@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+*{
+    background-image: linear-gradient(to bottom, darkgrey, black)
+}
+div.bloco{
+    height: 150px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    background-image: url('../_img/wallpaper002.jpg');
+}
+
+div#q1{
+    background-position: left top;
+}
+div#q2{
+    background-position: left bottom;
+}
+div#q3{
+    background-position: center center;
+}
+div#q4{
+    background-position: right top;
+}

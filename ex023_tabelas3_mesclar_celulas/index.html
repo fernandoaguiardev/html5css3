@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Masclagem de Células</title> <!-- Título da página exibido na aba do navegador -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte da página */
+        }
+        
+        td {
+            border: 1px solid magenta; /* Borda das células da tabela */
+            width: 150px; /* Largura fixa das células */
+            text-align: center; /* Centraliza o texto dentro das células */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 04</h1> <!-- Título principal da página -->
+    <table>
+        <tr>
+            <td>A</td> <!-- Célula simples -->
+            <td colspan="2">B</td> <!-- Célula que ocupa duas colunas -->
+            <!--<td>C</td>--> <!-- Célula comentada que não será exibida -->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!-- Célula que ocupa três linhas -->
+            <td>E</td> <!-- Célula simples -->
+            <td>F</td> <!-- Célula simples -->
+        </tr>
+        <tr>
+            <!--<td>G</td>--> <!-- Célula comentada que não será exibida -->
+            <td>H</td> <!-- Célula simples -->
+            <td>I</td> <!-- Célula simples -->
+        </tr>
+        <tr>
+            <!--<td>j</td>--> <!-- Célula comentada que não será exibida -->
+            <td>K</td> <!-- Célula simples -->
+            <td>L</td> <!-- Célula simples -->
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ</title>
+
+    <style>
+        /*Set all*/
+
+        @charset "UTF-8";
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: blue;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px rgba(0, 0, 94, 0.598);
+            padding: 10px;
+        }
+
+        /*Set Portrait*/
+        @media screen and (orientation: portrait) {
+                        
+            body {
+                background-image: url('imagens/cev-portrait.jpg');
+                background-position: left bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+                        
+        }
+        
+        /*Set Landscape*/
+        @media screen and (orientation: landscape) {
+
+            body {
+                background-image: url('imagens/cev-landscape.jpg');
+                background-position: left bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus molestiae doloribus, velit vel aliquam? Voluptas voluptatem at maxime vel nobis aliquid. Recusandae dolores officiis quam reprehenderit nulla cumque dolorem!</p>
+
+    <script>
+        // Scripts aqui
+    </script>
+
+</body>
+</html>

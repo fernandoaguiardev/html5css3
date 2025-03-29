@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Declara o tipo de documento e define o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <title>Alinhamento vertical</title> <!-- Define o título da página -->
+    <style>
+        /* Estilos para o contêiner principal */
+        #container{
+            background-image: url('_img/target001.png'); /* Define uma imagem de fundo */
+            background-size: 100% 100%; /* Faz a imagem cobrir todo o contêiner */
+            position: relative; /* Permite o posicionamento absoluto de elementos filhos */
+            height: 97vh; /* Define a altura do contêiner como 97% da altura da viewport */
+            border: 2px solid black; /* Borda sólida de 2px na cor preta */
+            background-color: rebeccapurple; /* Cor de fundo como rebeccapurple */
+            padding: 20px; /* Adiciona 20px de espaçamento interno */
+        }
+        
+        /* Estilos para o conteúdo central */
+        #conteúdo{
+            background-image: url('_img/target001.png'); /* Define uma imagem de fundo para o conteúdo */
+            background-size: 100% 100%; /* Faz a imagem cobrir todo o elemento */
+            position: absolute; /* Permite posicionar o elemento em relação ao contêiner pai */
+            height: 200px; /* Define a altura do conteúdo */
+            width: 400px; /* Define a largura do conteúdo */
+            border: 0.5px solid black; /* Borda sólida de 0.5px na cor preta */
+            background-color: yellow; /* Cor de fundo como amarelo */
+            top: 50%; /* Posiciona o conteúdo a 50% da altura do contêiner */
+            left: 50%; /* Posiciona o conteúdo a 50% da largura do contêiner */
+            transform: translate(-50%, -50%); /* Move o conteúdo para o centro, compensando sua própria largura e altura */
+        }
+    </style>
+</head>
+<body>
+    <section id="container"> <!-- Contêiner principal -->
+        <article id="conteúdo"> <!-- Conteúdo central que será posicionado no meio do contêiner -->
+        
+        </article>
+    </section>
+</body>
+</html>

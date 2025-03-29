@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação em iframes</title>
+
+    <style>
+        /* Estilos aqui */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        iframe{
+            width: 98vw;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <ul>
+        <li>
+            <a href="navegacao.html" target="tela">Home</a>
+        </li>
+        <li>
+            <a href="index.html" target="tela">Index</a>
+        </li>
+        <li>
+            <a href="pagina01.html" target="tela">Pagina01</a>
+        </li>
+        
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur exercitationem totam consequuntur dolore quasi excepturi delectus numquam provident ipsa autem corporis quaerat doloribus suscipit, eveniet reiciendis sed aliquid aliquam praesentium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laudantium nobis distinctio doloribus, placeat inventore deserunt minus, ea magnam corrupti aperiam consectetur quas blanditiis reiciendis officiis perferendis minima magni dolorum.</p>
+    <iframe name="tela" srcdoc="
+        <h1>Escolha uma das opções acima ^<h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores porro iusto similique autem! Voluptates temporibus quasi nostrum nemo aut praesentium rerum! Placeat, nulla. Praesentium laudantium libero molestiae, voluptatum recusandae dolor?<p><img src='img1.png' alt='img' width='50%' margin='auto'>
+        
+            " frameborder="0">
+    </iframe>
+
+    
+    <script>
+        // Scripts aqui
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="php.php" method="post">
+        <p>
+            <!-- Label para o campo de entrada do ano de nascimento -->
+            <label for="iano">Em que ano você nasceu?</label>
+            <!-- Campo de entrada numérico, chamando a função calcIdade() quando o valor muda -->
+            <input type="number" name="ano" id="iano" min="1900" max="2024" value="2000" oninput="calcIdade()">
+        </p>
+        <p>
+            <!-- Label para a saída da idade -->
+            <label for="iidade">Idade: </label>
+            <!-- Elemento de saída onde a idade será exibida -->
+            <output id="residade">X</output>
+        </p>
+        <p>
+            <!-- Botão para enviar o formulário -->
+            <input type="submit" value="Enviar">
+            <!-- Botão para resetar o formulário -->
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    
+    <script>
+        // Função para calcular a idade com base no ano de nascimento
+        function calcIdade() {
+            // Obtém o ano atual
+            let anoAtual = new Date().getFullYear();
+            // Calcula a idade e atualiza o conteúdo do elemento output
+            document.getElementById('residade').innerHTML = anoAtual - Number(document.getElementById('iano').value);
+        }
+    </script>    
+</body>
+</html>

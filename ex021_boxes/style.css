@@ -1,0 +1,53 @@
+h1 {
+    /* Define a cor de fundo do elemento <h1> como marrom */
+    background-color: brown;
+
+    /* Define a altura do elemento <h1> como 122px */
+    height: 122px;
+
+    /* Define a largura do elemento <h1> como 500px */
+    width: 500px;
+
+    /* Define a espessura da borda do elemento <h1> como 10px */
+    border-width: 10px;
+
+    /* Define o estilo da borda como sólido */
+    border-style: solid;
+
+    /* Define a cor da borda como darkslategray (cinza escuro) */
+    border-color: darkslategray;
+
+    /* Define os espaçamentos internos (padding) do elemento <h1> */
+    /* Espaçamento no topo: 10px */
+    padding-top: 10px;
+
+    /* Espaçamento à direita: 10px */
+    padding-right: 10px;
+
+    /* Espaçamento na parte inferior: 10px */
+    padding-bottom: 10px;
+    
+    /* Espaçamento à esquerda: 10px */
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: gold;
+}
+
+a {
+    /* ShortHand de border: */
+    border: 60px solid black;
+
+    /* Define o estilo da borda como groove (um estilo com um efeito em relevo) */
+    border-style: groove;
+
+    /* Define a cor da borda como amarelo */
+    border-color: yellow;
+
+
+}

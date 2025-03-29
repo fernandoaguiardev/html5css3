@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* Tipos de dispositivos e seus breakpoints
+   Pequenas telas: max 600px
+   Phone: 600px a 768px
+   Tablet: 768px a 992px
+   PC: 992px a 1200px
+   TV/Grandes Telas: 1200px ou mais
+*/
+
+/* Estilos de impressão */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace; /* Fonte padrão para impressão */
+    }
+
+    body {
+        background-color: rgb(215, 17, 17); /* Cor de fundo desnecessária em impressão */
+    }
+
+    main {
+        border: 2px solid black; /* Adiciona borda ao main em impressão */
+
+    }
+
+    main::after {
+        content: 'Versão para impressão';
+        text-decoration: wavy;
+    }
+
+    main h1 {
+        text-shadow: none; /* Remove sombra do título */
+        color: black; /* Altera cor do título para preto */
+    }
+
+    /* Controle de exibição de imagens */
+    img#print {
+        display: block; /* Exibe imagem específica para impressão */
+    }
+
+    img#phone,
+    img#tablet,
+    img#pc,
+    img#tv {
+        display: none; /* Oculta outras imagens durante a impressão */
+    }
+}
+
+/* Estilos para Tablet */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg'); /* Fundo específico para tablet */
+    }
+
+    /* Controle de exibição de imagens */
+    img#tablet {
+        display: block; /* Exibe imagem do tablet */
+    }
+
+    img#phone,
+    img#print,
+    img#pc,
+    img#tv {
+        display: none; /* Oculta outras imagens no tablet */
+    }
+}
+
+/* Estilos para PC */
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url('../imagens/back-pc.jpg'); /* Fundo específico para PC */
+    }
+
+    /* Controle de exibição de imagens */
+    img#pc {
+        display: block; /* Exibe imagem do PC */
+    }
+
+    img#phone,
+    img#print,
+    img#tablet,
+    img#tv {
+        display: none; /* Oculta outras imagens no PC */
+    }
+}
+
+/* Estilos para Grandes Telas */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-tv.jpg'); /* Fundo específico para grandes telas */
+    }
+
+    /* Controle de exibição de imagens */
+    img#tv {
+        display: block; /* Exibe imagem da TV */
+    }
+
+    img#phone,
+    img#print,
+    img#tablet,
+    img#pc {
+        display: none; /* Oculta outras imagens em grandes telas */
+    }
+}

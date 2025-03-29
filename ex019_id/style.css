@@ -1,0 +1,35 @@
+*{
+    background-color: #eacb90;
+}
+p{
+    text-align: justify;
+}
+/*
+em HTML id == em CSS #
+em HTML class == .
+
+em uma mesmo tag podemos usar id e class, mas o id vale mais(sobrepoem)
+primeiro tag, depois class e por último id
+*/
+h1{
+    color: #898b99;
+}
+h1#principal{
+    color: #898b99;
+}
+h1#secundario{
+    color: #714c2d;
+}
+h1#terciario{
+    color: #857976;
+}
+h2{
+    color: #a5a0a4;
+}
+.basico{
+    background-color: red;
+    font-weight: bold;
+}
+.avancado{
+    background-color: blue;
+}

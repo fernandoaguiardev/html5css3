@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o tipo de documento e a linguagem como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade para dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+
+    <style>
+        /* Estilos aqui */
+        
+        body{
+            font-family: sans-serif, monospace;
+            font-size: 15px;
+        }
+        div {
+
+            background-color: lightgray; /* Cor de fundo do div */
+            border-radius: 15px; /* Bordas arredondadas para um visual suave */
+            padding: 20px; /* Espaçamento interno do div */
+            border: 2px solid rgb(85, 90, 104); /* Borda com cor específica */
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.279); /* Sombra ao redor do div */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo 05</h1> <!-- Cabeçalho principal da página -->
+    <div>
+        <form action="cadastro.php" method="get" autocomplete="on"> <!-- Formulário que envia dados para cadastro.php usando o método GET -->
+            <!-- action: URL para onde os dados do formulário são enviados -->
+            <!-- method: especifica o método HTTP a ser utilizado (GET ou POST) -->
+            <!-- autocomplete: ativa o preenchimento automático do formulário pelo navegador -->
+            
+            <fieldset> <!-- Agrupa elementos relacionados, neste caso, os botões de rádio para seleção de gênero -->
+                <legend>Gênero</legend> <!-- Título do grupo de campos, que descreve o conteúdo do fieldset -->
+                
+                <!-- Botão de rádio para Masculino -->
+                <input type="radio" name="genero" id="imasc" checked> <!-- 
+                    type: especifica que este é um botão de rádio (apenas uma opção pode ser selecionada por vez);
+                    name: chave que identifica o grupo de botões de rádio (todos os botões do mesmo grupo devem ter o mesmo nome);
+                    id: identificador único para este input, utilizado pelo label.
+                    checked: define que esta opção estará selecionada por padrão.
+                -->
+                <label for="imasc">Masculino</label> <!-- Associando o texto "Masculino" ao botão de rádio correspondente -->
+                
+                <!-- Botão de rádio para Feminino -->
+                <input type="radio" name="genero" id="ifem"> <!-- 
+                    Os atributos são semelhantes aos do botão de rádio masculino:
+                    name: mesmo nome para garantir que apenas uma opção possa ser selecionada no grupo;
+                    id: identificador único para este input.
+                -->
+                <label for="ifem">Feminino</label> <!-- Associando o texto "Feminino" ao botão de rádio correspondente -->
+            </fieldset>
+            <fieldset> <!-- Agrupa elementos relacionados do formulário -->
+                <legend>Esportes favoritos:</legend> <!-- Título do grupo de campos -->
+                <p>
+                    <!-- Checkbox para Futebol -->
+                    <input type="checkbox" name="foot" id="ifoot"> <!-- name: chave do dado enviado; id: identifica o elemento para o label -->
+                    <label for="ifoot">Futebol</label><br> <!-- for: associa o label ao input correspondente -->
+                    
+                    <!-- Checkbox para Volei -->
+                    <input type="checkbox" name="vol" id="ivol">
+                    <label for="ivol">Volei</label><br>
+                    
+                    <!-- Checkbox para Basquete -->
+                    <input type="checkbox" name="bas" id="ibas">
+                    <label for="ibas">Basquete</label><br>
+                    
+                    <!-- Checkbox para Intervenção, já marcado -->
+                    <input type="checkbox" name="int" id="iint" checked> <!-- checked: define que o checkbox estará selecionado por padrão -->
+                    <label for="iint">Intervenção</label><br>
+                </p>
+            </fieldset>
+            <p>
+                <!-- Botão de envio do formulário, enviando dados para o servidor -->
+                <input type="submit" value="Enviar"> <!-- type: especifica que este é um botão de envio; value: texto exibido no botão -->
+                <!-- Botão para resetar os campos do formulário, limpando as seleções -->
+                <input type="reset" value="Corrigir"> <!-- type: especifica que este é um botão de reset; value: texto exibido no botão -->
+            </p>
+        </form>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt aliquam nostrum voluptatum architecto repellat laboriosam mollitia aliquid corporis est unde tempore optio officia, debitis iure animi nemo ducimus ipsa!</p> <!-- Texto de exemplo -->
+
+    <script>
+        // Scripts aqui (pode adicionar scripts JavaScript conforme necessário)
+    </script>
+
+</body>
+</html>

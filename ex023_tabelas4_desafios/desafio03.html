@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo em dispositivos móveis -->
+    <title>New page</title> <!-- Título da página -->
+    <style>
+
+        caption{
+            font-size: 20pt;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            padding: 30px;
+
+        }
+        /* Escopo Global: Estilos que se aplicam a todas as células (td), cabeçalhos (th) e parágrafos (p) */
+        td, th, p {
+            font-size: 14pt; /* Tamanho da fonte */
+            border: 1px solid black; /* Borda das células */
+            width: 200px; /* Largura fixa das células */
+        }
+        
+        /* Escopo de ID e Cabeçalhos: Estilo para a célula Normal e cabeçalhos */
+        #Normal, th, td {
+            background-color: rgb(169, 169, 169); /* Cor de fundo amarela */
+        }
+
+        /* Escopo de ID e Classe: Estilo para células com a classe 'col' */
+        #Colspan, .col {
+            background-color: rgb(248, 255, 170); /* Cor de fundo roxa */
+        }
+
+        /* Escopo de ID e Classe: Estilo para células com a classe 'row' */
+        #Rowspan, .row {
+            background-color: rgb(193, 235, 249); /* Cor de fundo azul claro */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Exemplo 05</caption>
+        <thead>
+            <tr>
+                <!-- th devem ser preenchidos com escopo colunas linhas cl/group -->
+                <th scope="col">Grupo</th> <!-- Cabeçalho da coluna Grupo -->
+                <th scope="col">Nomes</th> <!-- Cabeçalho da coluna Nomes -->
+                <th scope="colgroup" class="col" colspan="3">Filmes</th> <!-- Cabeçalho da coluna Filmes com colspan para unir 3 colunas -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" class="row" rowspan="3">Mulheres</th> <!-- Cabeçalho que ocupa 3 linhas -->
+                <td>Ana Maria</td> <!-- Nome da mulher -->
+                <td>Alien</td> <!-- Filme -->
+                <td>Rambo</td> <!-- Filme -->
+                <td>Vingadores</td> <!-- Filme -->
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batmans</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scop="rowgroup" class="row" rowspan="3">Homens</th> <!-- Cabeçalho que ocupa 3 linhas -->
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>
+        <p id="Normal">Normal</p> <!-- Parágrafo com ID Normal -->
+        <p id="Colspan">Colspan</p> <!-- Parágrafo com ID Colspan -->
+        <p id="Rowspan">Rowspan</p> <!-- Parágrafo com ID Rowspan -->
+    </h1>
+</body>
+</html>

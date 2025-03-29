@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*MEDIA QUERYES*/
+/* Para dispositivos com telas maiores que 992px (PCs) */
+@media (min-width: 992px) {
+
+    /* Ajuste do main para telas maiores */
+    span#iburguer {
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        max-width: 768px;
+    }
+}

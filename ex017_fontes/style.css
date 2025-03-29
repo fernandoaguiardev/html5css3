@@ -1,0 +1,43 @@
+/*Medidas de fontes:
+    Absolutas: 
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas:
+    em, ex, vw, vh, %
+    
+    Usar recomendadas pela W3C:
+    px(absoluta) e em(relativa)*/
+    h1.a {font-family: "Audiowide", sans-serif;}
+h1.b {font-family: "Sofia", sans-serif;}
+h1.c {font-family: "Trirong", serif;}
+
+body{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*font-size: 15px;*/
+    text-align: justify;
+
+}
+body {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    font-weight: bolder; /*Negrito*/
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: justify;
+  }
+  /*shorthand font:
+    font style
+        font weight
+            font size
+                font family*/
+h1{
+    font: italic bolder 1.85em 'Sofia' sans-serif;
+
+}
+
+h2{
+    color:#a2aaad;
+
+}

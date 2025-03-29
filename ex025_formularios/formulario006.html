@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o tipo de documento e a linguagem como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade para dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+
+    <style>
+        /* Estilos aqui */
+        
+        body{
+            font-family: sans-serif, monospace;
+            font-size: 15px;
+        }
+        div {
+
+            background-color: lightgray; /* Cor de fundo do div */
+            border-radius: 15px; /* Bordas arredondadas para um visual suave */
+            padding: 20px; /* Espaçamento interno do div */
+            border: 2px solid rgb(85, 90, 104); /* Borda com cor específica */
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.279); /* Sombra ao redor do div */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo 05</h1> <!-- Cabeçalho principal da página -->
+    <div>
+        <form action="cadastro.php" method="post" autocomplete="on"> <!-- Formulário que envia dados para cadastro.php usando o método GET -->
+            <!-- action: URL para onde os dados do formulário são enviados -->
+            <!-- method: especifica o método HTTP a ser utilizado (GET ou POST) -->
+            <!-- autocomplete: ativa o preenchimento automático do formulário pelo navegador -->
+            <fieldset>
+                <legend>Color</legend>
+                <p>
+                    Escolha: <input type="color" name="cores" id="icor">
+                    <label for="icor"></label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Range</legend>
+                <p>
+                    <label for="irange">Atenciômetro: </label>
+                    <input type="range" name="range" id="irange" min="1" max="5" value="4">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>File</legend>
+                <p>
+                    <input type="file" name="file" id="ifile">
+                    <label for="ifile"></label>
+                </p>
+            </fieldset>
+            <p>
+                <!-- Botão de envio do formulário, enviando dados para o servidor -->
+                <input type="submit" value="Enviar"> <!-- type: especifica que este é um botão de envio; value: texto exibido no botão -->
+                <!-- Botão para resetar os campos do formulário, limpando as seleções -->
+                <input type="reset" value="Corrigir"> <!-- type: especifica que este é um botão de reset; value: texto exibido no botão -->
+            </p>
+        </form>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt aliquam nostrum voluptatum architecto repellat laboriosam mollitia aliquid corporis est unde tempore optio officia, debitis iure animi nemo ducimus ipsa!</p> <!-- Texto de exemplo -->
+
+    <script>
+        // Scripts aqui (pode adicionar scripts JavaScript conforme necessário)
+    </script>
+
+</body>
+</html>
