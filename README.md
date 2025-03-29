@@ -6,7 +6,7 @@ Exercícios do Curso em Vídeo
  https://fernandoaguiardev.github.io/htmlAndCss/ex021_Desafio10_/#
 
  Projeto: Cordel Moderno
- https://fernandoaguiardev.github.io/htmlAndCss/ex022_cordel_moderno_/#
+ https://fernandoaguiardev.github.io/htmlAndCss/ex022_cordel_moderno_/
  
  Projeto: Login Responsivo
  https://fernandoaguiardev.github.io/htmlAndCss/ex026_projeto_login/#
