@@ -36,7 +36,7 @@ html, body{
 
 header{
     /* Estilização do cabeçalho */
-    background-color: var(--tom05); /* Fundo escuro */
+    background-color: var(--tom06); /* Fundo escuro */
     color: var(--tom07); /* Texto claro */
     text-align: center;
     font-family: var(--fonte1); /* Usa a primeira fonte */
@@ -124,7 +124,7 @@ section.normal > p{
 
 footer{
     /* Estilo do rodapé */
-    background-color: var(--tom06); /* Fundo escuro */
+    background-color: var(--tom05); /* Fundo escuro */
     color: var(--tom07); /* Texto claro */
     font-family: var(--fonte1); /* Usa a primeira fonte */
     font-variant: small-caps;
